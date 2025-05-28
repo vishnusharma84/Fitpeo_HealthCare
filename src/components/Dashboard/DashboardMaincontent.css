@@ -1,0 +1,99 @@
+.dashboard-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Main white container box */
+.full {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 60%;
+  background-color: white;
+}
+
+/* Health section center align */
+.hs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 75px;
+}
+
+/* Calendar view section */
+.cv {
+  padding-top: 45px;
+  height: 400px;
+}
+
+/* Horizontal section with gap */
+.vk {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Anatomy card section */
+.ac {
+  width: 80%;
+}
+
+.fullpage {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.h {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* ✅ Responsive media query */
+@media (max-width: 768px) {
+
+  .fullpage {
+    flex-direction: column;
+  }
+
+  .vk {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .full {
+    width: 100%;
+    margin-top: 30px;
+    padding: 12px;
+  }
+
+  .ac {
+    width: 100%;
+  }
+
+  .cv {
+    padding-top: 20px;
+    height: auto;
+  }
+
+  .section-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .h {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}

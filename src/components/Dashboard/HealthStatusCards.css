@@ -1,0 +1,91 @@
+/* Container of all cards */
+.health-status-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* Individual health card */
+.health-card {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 200px;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Icon + Label row */
+.icon-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 5px;
+}
+
+/* Icon */
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Label text */
+.label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Progress bar structure */
+.progress-bar {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 5px;
+  background-color: #3b82f6; 
+}
+
+.check-date {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* ✅ Responsive: Mobile view adjustments */
+@media (max-width: 600px) {
+  .health-status-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .health-card {
+    width: 90%;
+    height: auto;
+    padding: 12px;
+  }
+
+  .icon-label {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}

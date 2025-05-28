@@ -1,0 +1,73 @@
+.activity-feed {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-top: 24px;
+  /* display: flex; */
+}
+
+.active {
+  display: flex;
+  justify-content: space-between;
+}
+
+.activity-feed h2 {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.activity-feed p {
+  color: #666;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  height: 100px;
+}
+
+.chart-bar {
+  width: 20px;
+  background-color: #3f8efc;
+  border-radius: 4px 4px 0 0;
+}
+
+
+/* === Mobile Responsive Additions === */
+@media (max-width: 600px) {
+  .activity-feed {
+    padding: 16px;
+    margin-top: 16px;
+  }
+
+  .active {
+    flex-direction: column;  
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .activity-feed h2 {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .activity-feed p {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+
+  .chart {
+    height: 80px;
+    gap: 8px;
+  }
+
+  .chart-bar {
+    width: 14px;
+    border-radius: 3px 3px 0 0;
+  }
+}
